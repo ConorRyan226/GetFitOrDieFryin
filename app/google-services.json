@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "17159580166",
+    "firebase_url": "https://get-fit-or-die-fryin.firebaseio.com",
+    "project_id": "get-fit-or-die-fryin",
+    "storage_bucket": "get-fit-or-die-fryin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17159580166:android:fb1555b5d99c40ccce7187",
+        "android_client_info": {
+          "package_name": "com.Conor.Ryan.GetFitOrDieFryin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17159580166-oplvbt868nl5pis344b99h9felru5bno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfYQ8VJh61SeCgHxcN5VMq3cByE32Pysg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17159580166-oplvbt868nl5pis344b99h9felru5bno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
