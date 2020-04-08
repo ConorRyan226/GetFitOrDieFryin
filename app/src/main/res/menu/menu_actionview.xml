@@ -8,7 +8,7 @@
         app:showAsAction="always"
         android:title="Search"
         android:icon="@drawable/search"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        app:actionViewClass="android.support.v7.widget.SearchView"/>
+        xmlns="http://schemas.android.com/apk/res-auto"
+        app:actionViewClass="android.widget.SearchView"/>
 
 </menu>

@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':progressviewslib'
 rootProject.name='Get Fit Or Die Fryin'

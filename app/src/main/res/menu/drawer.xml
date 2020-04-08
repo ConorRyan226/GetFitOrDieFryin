@@ -11,7 +11,7 @@
             android:id="@+id/item2"
             android:checked="false"
             android:icon="@drawable/overview"
-            android:title="OverView"/>
+            android:title="@string/track_your_meal"/>
 
         <item
             android:id="@+id/item3"

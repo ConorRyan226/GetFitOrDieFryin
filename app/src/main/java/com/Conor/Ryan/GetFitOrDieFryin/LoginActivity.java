@@ -3,12 +3,9 @@ package com.Conor.Ryan.GetFitOrDieFryin;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.Conor.Ryan.GetFitOrDieFryin.R;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.ErrorCodes;
 import com.firebase.ui.auth.IdpResponse;
@@ -22,6 +19,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Arrays;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
                         .createSignInIntentBuilder()
                         .setIsSmartLockEnabled(false)
                         .setAvailableProviders(providers)
-                        .setLogo(R.drawable.stayfit)
+                        .setLogo(R.drawable.getfitordiefryin)
                         .build(),
                 RC_SIGN_IN);
     }
@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
         //  If the activity has never started before...
         if (isFirstRun) {
             //  Launch app intro
-            Intent i = new Intent(LoginActivity.this, AppIntroActivity.class);
+            Intent i = new Intent(LoginActivity.this, EnterInfoActivity.class);
             startActivity(i);
 
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
             initializeUserInfo();
         } else {
             getUserInfo();
-            Intent myIntent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent myIntent = new Intent(LoginActivity.this, SplashScreen.class);
             LoginActivity.this.startActivity(myIntent);
         }
     }
@@ -121,6 +121,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private DatabaseReference getUsersRef(String ref) {
         FirebaseUser user = mAuth.getCurrentUser();
+        assert user != null;
         String userId = user.getUid();
         return mDatabase.child("Users").child(userId).child(ref);
     }
@@ -131,10 +132,14 @@ public class LoginActivity extends AppCompatActivity {
         return mDatabase.child("Calories").child(userId).child(ref);
     }
 
+
     private void getUserInfo() {
+
+
         getUsersRef("stepgoal").addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                Log.i("DATA", (String) dataSnapshot.getValue());
+
                 mSeries1 = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
             }
 
@@ -222,7 +227,6 @@ public class LoginActivity extends AppCompatActivity {
         if (user != null) {
             USER_ID = user.getUid();
             USER_EMAIL = user.getEmail();
-            // Picasso.with(ActivityFUIAuth.this).load(user.getPhotoUrl()).into(imgProfile);
         }
     }
 

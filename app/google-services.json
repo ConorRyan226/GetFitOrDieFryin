@@ -8,9 +8,46 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:17159580166:android:fb1555b5d99c40ccce7187",
+        "mobilesdk_app_id": "1:17159580166:android:d4edc6dde95d2b1bce7187",
         "android_client_info": {
           "package_name": "com.Conor.Ryan.GetFitOrDieFryin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17159580166-ehg0p5r72fk6e4hh21o6ot0trnb0n6uq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Conor.Ryan.GetFitOrDieFryin",
+            "certificate_hash": "d777ee0f309b2c4dd234b06e5384890d4f7551b1"
+          }
+        },
+        {
+          "client_id": "17159580166-oplvbt868nl5pis344b99h9felru5bno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfYQ8VJh61SeCgHxcN5VMq3cByE32Pysg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17159580166-89dc5n00khi89edcnjmt2ua4p7nin0d1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17159580166:android:fb1555b5d99c40ccce7187",
+        "android_client_info": {
+          "package_name": "com.Conor.Ryan.getfitordiefryin"
         }
       },
       "oauth_client": [
@@ -28,7 +65,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "17159580166-oplvbt868nl5pis344b99h9felru5bno.apps.googleusercontent.com",
+              "client_id": "17159580166-89dc5n00khi89edcnjmt2ua4p7nin0d1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

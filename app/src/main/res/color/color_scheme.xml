@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <resources>
+    <color android:name="colorPrimary">#F44336</color>
+    <color android:name="colorPrimaryDark">#E53935</color>
+    <color android:name="colorAccent">#FF4081</color>
+    <color android:name="white">#FFFFFF</color>
+    <color android:name="yellow">#FFEB3B</color>
+    <color android:name="darkyellow">#FDD835</color>
+    <color android:name="black">#000000</color>
+    <color android:name="red">#ff0000</color>
+    <color android:name="lightgrey">#9E9E9E</color>
+    <color android:name="green">#26A69A</color>
+    <color android:name="syracuseorange">#D95900</color>
+    <color android:name="syracuseblue">#4A20AB</color>
+    <color android:name="fats">#F7CA18</color>
+    <color android:name="carbs">#22A7F0</color>
+    <color android:name="protein">#F22613</color>
+    <color android:name="appintro1">#EDD834</color>
+    <color android:name="appintro2">#FF7E55</color>
+    <color android:name="appintro3">#FADAA3</color>
+    <color android:name="appintro4">#72BAAC</color>
+    <color android:name="foreground_material_light">#f7f2e5</color>
+    <color android:name="darkblue">#0B0080</color>
+    <color android:name="blue">#3162D7</color>
+    <color android:name="stayFitAccent">#002841</color>
+    <color android:name="lightText">#c1beba</color>
+    <color android:name="darkWash">#f2f1ef</color>
+    <color android:name="yellowXL">#fcbc21</color>
+    <color android:name="yellowS">#fedc89</color>
+    <color android:name="greyXL">#524e4a</color>
+    </resources>
+</selector>
