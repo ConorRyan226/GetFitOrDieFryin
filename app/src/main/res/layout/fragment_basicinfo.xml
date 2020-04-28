@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/drawer">
+    android:background="@drawable/header">
 
     <TableLayout
         android:id="@+id/container"
@@ -161,7 +161,7 @@
                 android:id="@+id/nextbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/blue"
+                app:backgroundTint="@color/blue"
                 android:text="Next"
                 android:textColor="@color/white"
                 android:layout_marginTop="10dp"

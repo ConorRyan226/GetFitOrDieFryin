@@ -38,26 +38,15 @@ public class MainActivity extends AppCompatActivity implements
 
     public static float evsteps;
     public static int cont = 0;
-    /**
-     * Maximum value for each data series in the {@link DecoView}. This can be different for each
-     * data series, in this example we are applying the same all data series
-     */
     public static float mSeriesMax = 0f;
     boolean activityRunning;
-    /**
-     * DecoView animated arc based chart
-     */
+
     private DecoView mDecoView;
-    /**
-     * Data series index used for controlling animation of {@link DecoView}. These are set when
-     * the data series is created then used in {@link #createEvents} to specify what series to
-     * apply a given event to
-     */
+
     private int mBackIndex;
     private int mSeries1Index;
     private int mSeries2Index;
     private int mSeries3Index;
-    // Sensor data
     private TextView textView;
     private SensorManager msensorManager;
     private SensorManager sensorManager;

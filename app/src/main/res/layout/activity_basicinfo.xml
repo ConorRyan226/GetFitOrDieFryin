@@ -52,7 +52,7 @@
         tools:ignore="MergeRootFrame"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
-    <com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/next"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"

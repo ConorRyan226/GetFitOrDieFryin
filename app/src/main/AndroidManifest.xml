@@ -46,7 +46,6 @@
         <activity android:name=".MainActivity">
         </activity>
 
-
         <activity
             android:name=".ChartActivity"
             android:label="Conor Ryan" />

@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
             initializeUserInfo();
         } else {
             getUserInfo();
-            Intent myIntent = new Intent(LoginActivity.this, SplashScreen.class);
+            Intent myIntent = new Intent(LoginActivity.this, EnterInfoActivity.class);
             LoginActivity.this.startActivity(myIntent);
         }
     }
@@ -138,10 +138,11 @@ public class LoginActivity extends AppCompatActivity {
 
         getUsersRef("stepgoal").addListenerForSingleValueEvent(new ValueEventListener() {
             public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot == null){
                 Log.i("DATA", (String) dataSnapshot.getValue());
 
                 mSeries1 = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
-            }
+            }}
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
@@ -152,7 +153,9 @@ public class LoginActivity extends AppCompatActivity {
         getUsersRef("caloriegoal").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                mSeries2 = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
+                if (dataSnapshot == null) {
+                    mSeries2 = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
+                }
             }
 
             @Override
@@ -164,7 +167,9 @@ public class LoginActivity extends AppCompatActivity {
         getUsersRef("name").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                USER_NAME = (String.valueOf(dataSnapshot.getValue()));
+                if (dataSnapshot == null) {
+                    USER_NAME = (String.valueOf(dataSnapshot.getValue()));
+                }
             }
 
             @Override
@@ -176,9 +181,11 @@ public class LoginActivity extends AppCompatActivity {
         getCaloriesRef("totalcalories").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                calRef = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
-            }
+                if (dataSnapshot == null) {
 
+                    calRef = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
+                }
+            }
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
@@ -188,7 +195,9 @@ public class LoginActivity extends AppCompatActivity {
         getCaloriesRef("totalfat").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                user_fat = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
+                if (dataSnapshot == null) {
+                    user_fat = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
+                }
             }
 
             @Override
@@ -200,7 +209,9 @@ public class LoginActivity extends AppCompatActivity {
         getCaloriesRef("totalcarbs").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                user_carbs = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
+                if (dataSnapshot == null) {
+                    user_carbs = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
+                }
             }
 
             @Override
@@ -212,7 +223,9 @@ public class LoginActivity extends AppCompatActivity {
         getCaloriesRef("totalprotein").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                user_protein = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
+                if (dataSnapshot == null) {
+                    user_protein = Float.parseFloat(String.valueOf(dataSnapshot.getValue()));
+                }
             }
 
             @Override
