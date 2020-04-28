@@ -89,7 +89,7 @@ public class SetGoalActivity extends AppCompatActivity {
                     }
                 });
 
-                Intent myIntent = new Intent(SetGoalActivity.this, MainActivity.class);
+                Intent myIntent = new Intent(SetGoalActivity.this, SplashScreen.class);
                 startActivity(myIntent);
             }
         });

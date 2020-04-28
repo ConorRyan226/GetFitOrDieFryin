@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
             initializeUserInfo();
         } else {
             getUserInfo();
-            Intent myIntent = new Intent(LoginActivity.this, EnterInfoActivity.class);
+            Intent myIntent = new Intent(LoginActivity.this, SplashScreen.class);
             LoginActivity.this.startActivity(myIntent);
         }
     }
